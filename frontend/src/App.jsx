@@ -81,14 +81,11 @@ const App = () => {
     return <LoadingSpinner />;
   }
 
-const [user, setUser] = useState(null);
-
-useEffect(() => {
+const [user, setUser] = useState(() => {
   const storedUser = localStorage.getItem('user');
-  if (storedUser) {
-    setUser(JSON.parse(storedUser));
-  }
-}, []);
+  return storedUser ? JSON.parse(storedUser) : null;
+});
+
 
   return (
     <div className="app">
