@@ -137,7 +137,7 @@ const Home = ({ onLogin }) => {
         console.log('Login successful, user:', response.user);
         localStorage.setItem('user', JSON.stringify(response.user));
         onLogin?.(response.user);
-        navigate(response.user.role === 'admin' ? '/admin' : '/design');
+        navigate('/main');
       }
     } catch (error) {
       console.error('Login error:', error);
