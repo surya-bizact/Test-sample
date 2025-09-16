@@ -42,8 +42,6 @@ const App = () => {
   const { data: authData, isLoading, isError, refetch } = useCheckAuthStatusQuery();
   const [logout] = useLogoutMutation();
   
-  const user = authData?.user || null;
-
   const handleLogin = (userData) => {
     // The login mutation will update the cache, which will trigger a re-render
     // with the new user data from the checkAuthStatus query
