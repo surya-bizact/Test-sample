@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700;900&display=swap');
 
 .home-container {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-top: 70px;
-  background: linear-gradient(180deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
-  font-family: 'Comic Neue', cursive;
+  padding: 35px;
+  /* background: linear-gradient(180deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%); */
+  background: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home-content {
@@ -21,8 +22,11 @@
   backdrop-filter: blur(15px);
   margin-top: 0;
   border: 3px solid rgba(114, 56, 61, 0.4);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
+
+
+
 
 .logo-section {
   flex: 1;
@@ -36,7 +40,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo-section::before {
@@ -55,7 +59,7 @@
   margin-bottom: 32px;
   border-radius: 24px;
   box-shadow: 0 16px 32px rgba(114, 56, 61, 0.3);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .app-title {
@@ -68,7 +72,7 @@
   -webkit-text-fill-color: unset !important;
   background-clip: unset !important;
   animation: none !important;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .app-subtitle {
@@ -77,7 +81,7 @@
   opacity: 0.9;
   font-weight: 400;
   color: #72383d;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .login-section {
@@ -89,7 +93,7 @@
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 100%);
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   min-height: 100%;
 }
 
@@ -103,31 +107,40 @@
   background: linear-gradient(90deg, transparent, rgba(114, 56, 61, 0.1), transparent);
 }
 
+
 .auth-container {
-  width: 100%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   background: rgba(255, 255, 255, 0.95);
   border-radius: 24px;
   box-shadow: 0 15px 35px rgba(114, 56, 61, 0.2);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   animation: fadeInUp 0.6s ease-out;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background: #F9F5E8;
+  backdrop-filter: blur(12px);
 }
 
 .auth-header {
   text-align: center;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;  /* stack one below another */
+  justify-content: center; /* vertical centering inside parent */
+  align-items: center;
 }
 
 .auth-header h1 {
-  color: #72383d;
+  color: #BC4034;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, #72383d 0%, #deacd1 100%);
+  background: linear-gradient(135deg, #BC4034 0%, #BC4034 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -135,18 +148,21 @@
 }
 
 .auth-header p {
-  color: #666;
+  color: #BC4034;
   font-size: 1.1rem;
   margin: 0;
 }
 
 .auth-box {
   width: 100%;
+  background: white;
+  padding: 10%;
 }
 
 .auth-tabs {
   display: flex;
   margin-bottom: 24px;
+  margin-top: 10px;
   background: #f9f4f0;
   border-radius: 12px;
   padding: 6px;
@@ -158,10 +174,10 @@
   padding: 12px;
   border: none;
   background: none;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
-  color: #72383d;
+  color: #BC4034;
   cursor: pointer;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -169,7 +185,7 @@
 
 .auth-tabs .tab.active {
   background: white;
-  color: #72383d;
+  color: #BC4034;
   box-shadow: 0 2px 8px rgba(114, 56, 61, 0.15);
 }
 
@@ -178,7 +194,7 @@
 }
 
 .auth-form h2 {
-  color: #72383d;
+  color: black;
   text-align: center;
   margin-bottom: 24px;
   font-size: 1.8rem;
@@ -193,7 +209,7 @@
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  color: #555;
+  color: black;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -204,7 +220,7 @@
   border: 2px solid #e0d6c9;
   border-radius: 10px;
   font-size: 1rem;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
   background-color: #f9f9f9;
 }
@@ -244,16 +260,16 @@
   color: #72383d;
 }
 
-button[type="submit"] {
+/* button[type="submit"] {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, #72383d 0%, #deacd1 100%);
+  background: #BC4034;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 10px;
@@ -263,7 +279,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(114, 56, 61, 0.3);
-}
+} */
 
 button[type="submit"]:active {
   transform: translateY(0);
@@ -272,12 +288,12 @@ button[type="submit"]:active {
 .auth-footer {
   text-align: center;
   margin-top: 24px;
-  color: #777;
+  color: #090404;
   font-size: 0.95rem;
 }
 
 .auth-footer a {
-  color: #72383d;
+  color: #BC4034;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -363,7 +379,7 @@ button[type="submit"]:active {
   width: 100%;
   max-width: 420px;
   height: 500px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Register form specific scrollbar */
@@ -420,7 +436,7 @@ button[type="submit"]:active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .login-card p {
@@ -428,14 +444,14 @@ button[type="submit"]:active {
   margin: 0 0 28px 0;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 20px;
   min-height: 400px;
 }
@@ -444,25 +460,25 @@ button[type="submit"]:active {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-group label {
   font-weight: 400;
-  color: #72383d;
-  font-size: 0.9rem;
-  font-family: 'Comic Neue', cursive;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
 }
 
 .form-group label:hover {
-  color: #f8ac8c;
+  color: #BC4034;
   transform: translateX(5px);
 }
 
 .form-group input {
   padding: 14px 18px;
-  border: 3px solid rgba(114, 56, 61, 0.4);
+  border: 1px solid rgba(55, 52, 52, 0.40);
   border-radius: 12px;
   font-size: 1rem;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 100%);
@@ -470,7 +486,7 @@ button[type="submit"]:active {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   width: 90%;
   max-width: 400px;
   margin: 0 auto;
@@ -535,7 +551,7 @@ button[type="submit"]:active {
   box-shadow: 0 6px 12px rgba(248, 172, 140, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .login-button:hover {
@@ -568,7 +584,7 @@ button[type="submit"]:active {
   margin-bottom: 12px;
   font-weight: 600;
   animation: slideInRight 0.6s ease-out;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes slideInRight {
@@ -638,7 +654,7 @@ button[type="submit"]:active {
   margin-bottom: 12px;
   font-weight: 600;
   animation: slideInRight 0.6s ease-out;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   max-height: 120px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -763,7 +779,7 @@ button[type="submit"]:active {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: slideUp 0.3s ease-out;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   border: 2px solid #72383d;
 }
 
@@ -810,7 +826,7 @@ button[type="submit"]:active {
   transition: all 0.3s ease;
   border: none;
   outline: none;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .verification-popup .btn-primary {

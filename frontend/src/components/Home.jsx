@@ -272,8 +272,17 @@ const Home = ({ onLogin }) => {
     <div className="home-container">
       <div className="auth-container">
         <div className="auth-header">
-          <h1>Welcome to AltarMaker</h1>
-          <p>Create beautiful digital altars and memorials</p>
+          <img 
+            src="/logo/logo.png" 
+            alt="Logo" 
+            style={{
+              width: '20%',
+              height: '25%',
+              // objectFit: 'cover'
+            }}
+          />
+          <h1>AltarMaker</h1>
+          <p>Create Beautiful Spaces</p>
         </div>
 
         <div className="auth-box">
@@ -350,6 +359,25 @@ const Home = ({ onLogin }) => {
                   <div className="password-hint">{passwordError}</div>
                 )}
               </div>
+
+                {/* Forgot password link (login mode only) */}
+                {authMode === 'login' && (
+                  <div style={{ textAlign: 'right', marginBottom: '0.5rem' }}>
+                    <a 
+                      href="#" 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (!email && !username) {
+                          setEmail('');
+                        }
+                        setAuthMode('forgot');
+                      }}
+                      style={{ color: '#BC4034', fontSize: '15px', fontFamily: 'Montserrat', textDecoration: 'underline', cursor: 'pointer' }}
+                    >
+                      Forgot password?
+                    </a>
+                  </div>
+                )}
               
               {authMode === 'register' && (
                 <div className="form-group">
@@ -373,6 +401,7 @@ const Home = ({ onLogin }) => {
                       {showConfirmPassword ? '👁️' : '👁️‍🗨️'}
                     </button>
                   </div>
+                  
                 </div>
               )}
               
@@ -382,10 +411,10 @@ const Home = ({ onLogin }) => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  <>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span className="loading-spinner"></span>
                     {authMode === 'login' ? 'Signing In...' : 'Creating Account...'}
-                  </>
+                  </div>
                 ) : (
                   authMode === 'login' ? 'Sign In' : 'Create Account'
                 )}
@@ -403,21 +432,6 @@ const Home = ({ onLogin }) => {
                         setSuccess('');
                       }}>
                         Sign up
-                      </a>
-                    </p>
-                    <p>
-                      <a 
-                        href="#" 
-                        onClick={(e) => {
-                          e.preventDefault();
-                          // Show forgot password form
-                          if (!email && !username) {
-                            setEmail('');
-                          }
-                          setAuthMode('forgot');
-                        }}
-                      >
-                        Forgot password?
                       </a>
                     </p>
                   </>

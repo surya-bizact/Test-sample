@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   border: 3px solid rgba(114, 56, 61, 0.4);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -57,7 +57,7 @@
   font-size: 28px;
   font-weight: 700;
   color: #72383d;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 .close-button {
   background: #0f0960;
@@ -72,7 +72,7 @@
   border-radius: 6px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -103,7 +103,7 @@
   border-bottom: 4px solid transparent;
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .tab-button::before {
@@ -141,7 +141,7 @@
   overflow-x: hidden;
   padding: 24px;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 25%, #f8e4c4 50%, #f8ac8c 75%, #deacd1 100%);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Custom scrollbar for admin panel */
@@ -174,7 +174,7 @@
   color: #72383d !important;
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   background: none !important;
   background-image: none !important;
   -webkit-background-clip: unset !important;
@@ -199,7 +199,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes float {
@@ -233,7 +233,7 @@
   color: #72383d;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .stat-value {
@@ -243,7 +243,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 .users-list {
   display: flex;
@@ -263,7 +263,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -293,7 +293,7 @@
   color: #72383d;
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .user-info p {
@@ -301,7 +301,7 @@
   color: #72383d;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .role-badge {
@@ -311,7 +311,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .role-badge.admin {
@@ -345,7 +345,7 @@
   box-shadow: 0 4px 8px rgba(248, 172, 140, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .delete-user-btn:hover {
@@ -377,7 +377,7 @@
   box-shadow: 0 4px 8px rgba(210, 228, 232, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .promote-user-btn:hover {
@@ -414,7 +414,7 @@
   box-shadow: 0 4px 8px rgba(248, 228, 196, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .demote-user-btn:hover {
@@ -431,7 +431,7 @@
   color: #72383d;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .error {
@@ -443,7 +443,7 @@
   border-radius: 12px;
   margin: 20px 0;
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .admin-panel-footer {
@@ -454,7 +454,7 @@
   color: #72383d;
   font-size: 14px;
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .admin-panel-footer p {
@@ -469,7 +469,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .users-header {
@@ -485,7 +485,7 @@
   margin: 0;
   color: #72383d !important;
   font-size: 24px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   background: none !important;
   background-image: none !important;
   -webkit-background-clip: unset !important;
@@ -508,7 +508,7 @@
   transition: all 0.3s ease;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 100%);
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .search-input:focus {
@@ -521,7 +521,7 @@
 .search-input::placeholder {
   color: #72383d;
   font-style: italic;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .search-icon {
@@ -541,7 +541,7 @@
   border-radius: 12px;
   border: 3px dashed rgba(114, 56, 61, 0.4);
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .search-results-info {
@@ -554,7 +554,7 @@
   font-size: 14px;
   font-weight: 700;
   border: 2px solid rgba(210, 228, 232, 0.3);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 768px) {

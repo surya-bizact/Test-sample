@@ -6,7 +6,7 @@ html, body, #root {
   padding: 0;
   height: 100%;
   background: linear-gradient(180deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -15,7 +15,7 @@ a {
   color: #72383d;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover {
@@ -25,44 +25,44 @@ a:hover {
 
 body {
   background: linear-gradient(180deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
-  font-family: 'Comic Neue', cursive;
+font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  background: linear-gradient(135deg, #f8ac8c 0%, #deacd1 50%, #d2e4e8 100%);
+  /* background: linear-gradient(135deg, #f8ac8c 0%, #deacd1 50%, #d2e4e8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-family: 'Comic Neue', cursive;
+  background-clip: text; */
+font-family: "Montserrat", sans-serif;
 }
 
 button {
-  border-radius: 12px;
+  /* border-radius: 12px;
   border: 3px solid rgba(114, 56, 61, 0.4);
   padding: 12px 24px;
   font-weight: 700;
   background: linear-gradient(135deg, #f8ac8c 0%, #deacd1 50%, #d2e4e8 100%);
   box-shadow: 0 6px 12px rgba(248, 172, 140, 0.3);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Comic Neue', cursive;
-  color: #72383d;
+  /* letter-spacing: 1px; */
+font-family: "Montserrat", sans-serif;
+  /* color: #72383d; 
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;  */
 }
 
 
 button:hover {
-  background: linear-gradient(135deg, #deacd1 0%, #d2e4e8 50%, #f9f4f0 100%);
+  /* background: linear-gradient(135deg, #deacd1 0%, #d2e4e8 50%, #f9f4f0 100%);
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 24px rgba(248, 172, 140, 0.4);
+  box-shadow: 0 12px 24px rgba(248, 172, 140, 0.4); */
 }
 
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 3px solid #f8ac8c;
   outline-offset: 3px;
-}
+} */
 
 /* Light mode colors */
 :root {
@@ -74,7 +74,7 @@ a:hover {
   color: #f8ac8c;
 }
 
-button {
+/* button {
   background: linear-gradient(135deg, #f8ac8c 0%, #deacd1 50%, #d2e4e8 100%);
   color: #72383d;
-}
+} */

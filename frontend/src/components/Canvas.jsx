@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
 import { Rnd } from "react-rnd";
 import Cropper from "react-easy-crop";
+import "./Canvas.css";
 
 const Canvas = ({ elements, setElements, selectedElementId, setSelectedElementId, wallpaper, onCanvasSize, onCanvasRef, isDownloadMode = false, roomType = "livingroom", selectedWall = "front", roomDimensions = { length: 12, width: 10, height: 8 } }) => {
   const [cropFrameId, setCropFrameId] = useState(null);
@@ -167,6 +168,8 @@ const Canvas = ({ elements, setElements, selectedElementId, setSelectedElementId
         margin: 0,
         overflow: 'auto',
       }}
+
+      className="canvas-main-container"
     >
       <div
         ref={canvasRef}

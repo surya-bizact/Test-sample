@@ -7,7 +7,7 @@
   flex-direction: column;
   background: linear-gradient(180deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
   animation: gradientShift 8s ease-in-out infinite;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes gradientShift {
@@ -17,14 +17,15 @@
 
 header {
   padding: 20px;
-  background: linear-gradient(90deg, #f9f4f0 0%, #c5aa7f 50%, #f8ac8c 75%);
+  /* background: linear-gradient(90deg, #f9f4f0 0%, #c5aa7f 50%, #f8ac8c 75%); */
+  background-color: #fff;
   color: #72383d;
   font-size: 24px;
   text-align: center;
   font-weight: 700;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 0 2px 4px rgba(255,255,255,0.8);
-  border-bottom: 3px solid rgba(114, 56, 61, 0.4);
+  /* border-bottom: 3px solid rgba(114, 56, 61, 0.4); */
   box-shadow: 0 4px 20px rgba(114, 56, 61, 0.2);
   position: relative;
   overflow: hidden;
@@ -37,7 +38,7 @@ header::before {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  /* background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); */
   animation: shimmer 3s infinite;
 }
 
@@ -51,14 +52,15 @@ header::before {
   flex: 1;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
+  /* background: linear-gradient(135deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%); */
+  background: #f9f5e8;
 }
 
 /* Sidebar styling with elegant gradients */
 .sidebar-container {
-  width: 200px;
+  width: 270px;
   min-width: 220px;
-  background: linear-gradient(180deg, #ffffff 0%, #f9f4f0 25%, #f8e4c4 50%, #f8ac8c 75%, #deacd1 100%);
+  background: #f9f5e8;
   border-right: 3px solid rgba(114, 56, 61, 0.4);
   overflow-y: auto;
   overflow-x: hidden;
@@ -68,7 +70,7 @@ header::before {
   box-shadow: 4px 0 20px rgba(114, 56, 61, 0.15);
   position: relative;
   animation: slideInLeft 0.6s ease-out;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes slideInLeft {
@@ -89,7 +91,7 @@ header::before {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%);
+  /* background: linear-gradient(90deg, #f9f4f0 0%, #f8e4c4 25%, #f8ac8c 50%, #deacd1 75%, #d2e4e8 100%); */
 }
 
 /* Sidebar text styling with vibrant colors */
@@ -100,7 +102,7 @@ header::before {
   color: #72383d;
   margin-bottom: 12px;
   font-weight: 700;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 0 1px 2px rgba(255,255,255,0.8);
   transition: all 0.3s ease;
 }
@@ -135,7 +137,7 @@ header::before {
   color: #72383d !important; 
   font-weight:bold !important; 
   font-size: 22px !important;
-  font-family: 'Comic Neue', cursive !important;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(135deg, #d2e4e8 0%, #deacd1 50%, #f8ac8c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,7 +159,7 @@ header::before {
 .sidebar-container p,
 .sidebar-container span {
   margin-bottom: 8px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 19px;
   transition: all 0.3s ease;
@@ -184,7 +186,7 @@ header::before {
   box-shadow: 0 4px 8px rgba(114, 56, 61, 0.2);
   position: relative;
   overflow: hidden;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sidebar-container select::before,
@@ -238,7 +240,7 @@ header::before {
   position: relative;
   overflow: hidden;
   animation: buttonPulse 2s ease-in-out infinite;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes buttonPulse {
@@ -279,7 +281,7 @@ header::before {
   align-items: center;
   justify-content: center;
   padding: 32px;
-  background: linear-gradient(135deg, #f9f4f0 0%, #deacd1 75%);
+  background: #f9f5e8;
   overflow: auto;
   position: relative;
 }
@@ -440,7 +442,7 @@ html, body, .app-container, .content-area {
   font-size: 16px !important;
   font-weight: 600;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 100%);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Specific styling for wall selection */
@@ -448,7 +450,7 @@ html, body, .app-container, .content-area {
   font-size: 16px !important;
   font-weight: 600;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 100%);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Enhanced label styling with vibrant colors */
@@ -457,7 +459,7 @@ html, body, .app-container, .content-area {
   font-weight: 700;
   color: #72383d;
   margin-bottom: 10px;
-  font-family: 'Comic Neue', cursive !important;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 0 1px 2px rgba(255,255,255,0.8);
   background: linear-gradient(135deg, #f8ac8c 0%, #deacd1 50%, #d2e4e8 100%);
   -webkit-background-clip: text;

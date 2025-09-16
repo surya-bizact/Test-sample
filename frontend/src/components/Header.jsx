@@ -4,17 +4,14 @@ import React from "react";
 const StyledLogo = () => {
   return (
     <div style={{
-      fontFamily: "'Playfair Display', serif",
-      color: '#72383d',
-      fontWeight: 100,
-      fontSize: '40px',
+      fontFamily: "'Montserrat', serif",
+      color: '#BC4034',
+      fontWeight: 600,
+      fontSize: '24px',
       display: 'flex',
       alignItems: 'center'
     }}>
-      <span style={{ fontSize: '40px', verticalAlign: 'middle' }}>A</span>
-      <span style={{ fontSize: '30px', verticalAlign: 'middle' }}>ltar</span>
-      <span style={{ fontSize: '40px', verticalAlign: 'middle' }}>M</span>
-      <span style={{ fontSize: '30px', verticalAlign: 'middle' }}>aker</span>
+      Alter Maker
     </div>
   );
 };
@@ -22,14 +19,12 @@ const StyledLogo = () => {
 const Header = ({ loadRoomDesign, newSession, user, onLogout, onAdminPanel }) => {
   return (
     <header style={{
-      backgroundColor: '#4a1c40',
+      backgroundColor: '#fff',
       color: 'white',
       padding: '16px 24px',
       display: 'flex',
       justifyContent: 'space-between',
-      alignItems: 'center',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-    }}>
+      alignItems: 'center'    }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <div style={{
           width: '50px',

@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   border: 3px solid rgba(114, 56, 61, 0.4);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .session-modal-header {
@@ -57,7 +57,7 @@
   font-size: 28px;
   font-weight: 700;
   color: #72383d;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes textGlow {
@@ -78,7 +78,7 @@
   border-radius: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -100,7 +100,7 @@
   overflow-y: auto;
   padding: 24px;
   background: linear-gradient(135deg, #ffffff 0%, #f9f4f0 25%, #f8e4c4 50%, #f8ac8c 75%, #deacd1 100%);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .no-sessions {
@@ -109,7 +109,7 @@
   color: #72383d;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sessions-grid {
@@ -126,7 +126,7 @@
   position: relative;
   transition: all 0.3s ease;
   box-shadow: 0 8px 16px rgba(114, 56, 61, 0.2);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -160,7 +160,7 @@
   font-size: 20px;
   font-weight: 700;
   color: #72383d;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .session-details {
@@ -168,7 +168,7 @@
   font-size: 14px;
   font-weight: 500;
   margin: 0 0 8px 0;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .session-type {
@@ -182,14 +182,14 @@
   text-transform: uppercase;
   display: inline-block;
   box-shadow: 0 4px 8px rgba(248, 172, 140, 0.3);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 .session-date {
   color: #72383d;
   font-size: 12px;
   font-weight: 500;
   margin-top: 8px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .updated-badge {
@@ -205,7 +205,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   box-shadow: 0 2px 4px rgba(210, 228, 232, 0.3);
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .session-actions {
@@ -225,7 +225,7 @@
   box-shadow: 0 4px 8px rgba(114, 56, 61, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .load-button {
@@ -272,7 +272,7 @@
   box-shadow: 0 4px 8px rgba(248, 228, 196, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cancel-button:hover {
@@ -351,5 +351,5 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Montserrat", sans-serif;
 } 
