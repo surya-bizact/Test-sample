@@ -817,8 +817,12 @@ def serve_home():
 
 @app.route('/<path:path>')
 def serve_static(path):
-    """Serve static files from the React build"""
-    return send_from_directory(app.static_folder, path)
+    """Serve static files from the React build or fallback to index.html"""
+    file_path = os.path.join(app.static_folder, path)
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 @app.errorhandler(404)
 def not_found(e):
