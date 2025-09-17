@@ -42,6 +42,8 @@ const App = () => {
   const { data: authData, isLoading, isError, refetch } = useCheckAuthStatusQuery();
   const [logout] = useLogoutMutation();
   
+  const user = authData?.user || null;
+
   const handleLogin = (userData) => {
     // The login mutation will update the cache, which will trigger a re-render
     // with the new user data from the checkAuthStatus query
@@ -80,12 +82,6 @@ const App = () => {
   if (isLoading) {
     return <LoadingSpinner />;
   }
-
-const [user, setUser] = useState(() => {
-  const storedUser = localStorage.getItem('user');
-  return storedUser ? JSON.parse(storedUser) : null;
-});
-
 
   return (
     <div className="app">
