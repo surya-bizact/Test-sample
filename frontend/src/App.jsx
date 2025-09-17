@@ -41,8 +41,18 @@ const App = () => {
   const navigate = useNavigate();
   const { data: authData, isLoading, isError, refetch } = useCheckAuthStatusQuery();
   const [logout] = useLogoutMutation();
-  
-  const user = authData?.user || null;
+  const [user, setUser] = React.useState(null);
+
+  // const user = authData?.user || null;
+  useEffect(() => {
+    if (isError) {
+      console.error('Error fetching auth status');
+    } if (authData && authData.user) {
+      setUser(authData.user);
+    }
+  }, [authData]);
+
+  console.log(user, "xyz user")
 
   const handleLogin = (userData) => {
     // The login mutation will update the cache, which will trigger a re-render
@@ -57,10 +67,10 @@ const App = () => {
       localStorage.removeItem('token');
       sessionStorage.clear();
       document.cookie = "session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=localhost";
-      
+
       // Force a hard navigation to ensure all state is cleared
       window.location.href = '/';
-      
+
       // The logout mutation will invalidate the User tag, which will clear the cache
       // and trigger a re-render with no user data
       navigate('/', { replace: true });
@@ -68,7 +78,7 @@ const App = () => {
       console.error('Error during logout:', error);
     }
   };
-  
+
   const handleWelcomeLogin = () => {
     // Navigate to login page using React Router
     navigate('/login');
@@ -84,40 +94,53 @@ const App = () => {
   }
 
   return (
-    <div className="app">
-      <Routes>
-        <Route 
-          path="/" 
-          element={
-            user ? <Navigate to="/main" replace /> : <Welcome onLogin={handleWelcomeLogin} onRegister={handleWelcomeRegister} />
-          } 
-        />
-        <Route 
-          path="/home" 
-          element={
-            user ? <Navigate to="/main" replace /> : <Home onLogin={handleLogin} />
-          } 
-        />
-        <Route 
-          path="/login" 
-          element={
-            user ? <Navigate to="/main" replace /> : <Home onLogin={handleLogin} />
-          } 
-        />
-        <Route 
-          path="/main" 
-          element={
-            user ? <Main user={user} onLogout={handleLogout} /> : <Navigate to="/" replace />
-          } 
-        />
-        <Route 
-          path="/verify-email" 
-          element={<VerifyEmail />} 
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </div>
-  );
-};
+    user ? (
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              user ? <Navigate to="/main" replace /> : <Welcome onLogin={handleWelcomeLogin} onRegister={handleWelcomeRegister} />
+            }
+          />
+          <Route
+            path="/home"
+            element={
+              user ? <Navigate to="/main" replace /> : <Home onLogin={handleLogin} />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              user ? <Navigate to="/main" replace /> : <Home onLogin={handleLogin} />
+            }
+          />
+          <Route
+            path="/main"
+            element={
+              user ? <Main user={user} onLogout={handleLogout} /> : <Navigate to="/" replace />
+            }
+          />
+          <Route
+            path="/verify-email"
+            element={<VerifyEmail />}
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
+    ) : (
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Welcome onLogin={handleWelcomeLogin} onRegister={handleWelcomeRegister} />} />
+<Route
+            path="/login"
+            element={
+              user ? <Navigate to="/main" replace /> : <Home onLogin={handleLogin} />
+            }
+          />
+        </Routes>
+      </div>
+    )
+)};
 
 export default App;
